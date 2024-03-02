@@ -1,0 +1,111 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --LightRed: hsl(0, 100%, 67%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Off-white: hsl(0, 0%, 94%);
+    --White: hsl(0, 0%, 100%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+body {
+  font-family: "Poppins", sans-serif; 
+  display: flex;
+  justify-content: center;
+  background-color: var(--Light-grey);
+}
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 530px;
+  max-width: 80%;
+  padding: 30px;
+  border-bottom-right-radius: 150px;
+  margin: 140px auto;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  position: relative;
+}
+.input-container {
+  display: flex;
+  align-content: center;
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+.day-container ,.month-container , .year-container {
+display: flex;
+flex-direction: column;
+}
+span {
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--Smokey-grey);
+  padding-bottom: 5px;
+}
+
+input {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 2px solid var(--Off-white);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input:focus {
+  border: 2px solid var(--Purple);
+}
+
+.error-input {
+  color: red;
+  font-size :0.6em; ;
+  font-style: italic;
+  font-weight: 400;
+  display: none;
+}
+hr {
+  border: 1px solid var(--Off-white);
+}
+button {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  background-color: var(--Purple);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  cursor: pointer;
+  margin-right: 12px;
+}
+button:hover {
+  background-color: black;
+}
+button img {
+  transform: scale(1.5);
+}
+.output-container {
+  line-height: 1;
+  padding-top: 25px;
+}
+h1{
+  font-size: 4rem;
+}
+.output-container span  {
+  color: var(--Purple);
+  letter-spacing: 5px;
+  font-size: 4rem;
+  font-style: italic;
+}
